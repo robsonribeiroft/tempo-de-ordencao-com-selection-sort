@@ -2,8 +2,19 @@ import random
 import timeit
 import matplotlib.pyplot as plt
 
+
+def generate_numbers_size(list, init_num, lenght):
+    for i in range(1, lenght+ 1,1):
+        if i != 1:
+            i = i * 20
+        elif i >= 2:
+            i = i * 2
+        num = init_num * i
+        lista.append(num)
+
 lista = []
-num_elementos = [100,1000,3000,6000,9000,12000,15000,18000,21000,24000]
+num_elementos = []
+generate_numbers_size(num_elementos, 100, 10)
 tempo = []
 tempo_ordena = []
   
